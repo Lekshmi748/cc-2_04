@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/validation.js"></script>
+</head>
+<body>
+    <div class="eml">
+        <form method="post" action="/mailer" onsubmit="return validateEmail(event);">
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Address" /><br/>
+            <input type="submit" id="Send" class="btn btn-primary" value="Send Email" />
+        </form>
+    </div>
+</body>
+</html>
